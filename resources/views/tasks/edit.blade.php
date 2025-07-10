@@ -17,6 +17,12 @@
                     </label>
                     <input type="text" name="content" value="{{ $task->content }}" class="input input-bordered w-full">
                 </div>
+                <div class="form-control my-4">
+                    <label for="status" class="label">
+                        <span class="label-text">ステータス:</span>
+                    </label>
+                    <input type="text" name="status" value="{{ $task->status }}" class="input input-bordered w-full">
+                </div>
 
             <button type="submit" class="btn btn-primary btn-outline">更新</button>
         </form>
