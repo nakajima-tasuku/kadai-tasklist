@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('content') 
 
     <div class="prose ml-4">
         <h2 class="text-lg">タスク 一覧</h2>
@@ -25,6 +25,8 @@
                 @endforeach
             </tbody>
         </table>
+        {{-- ページネーションのリンク --}}
+        {{ $tasks->links() }}
     @endif
 
     <a class="btn btn-primary" href="{{ route('tasks.create') }}">新規タスクの追加</a>
